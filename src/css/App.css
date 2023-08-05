@@ -1,0 +1,240 @@
+.App {
+  text-align: center;
+}
+.fa-flip {
+  --fa-flip-scale: 2;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+/*
+html, body{
+  display: grid;
+  height: 100vh;
+  width: 100%;
+  place-items: center;
+}
+*/
+.container {
+  background: white;
+  width: 100%;
+  padding: 0px 30px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+}
+
+.wrapper {
+  box-sizing: border-box;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+}
+
+#loading {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: #fff url("./loader.gif") no-repeat center;
+  z-index: 99999;
+}
+
+::selection {
+  color: #000;
+  background: #fff;
+}
+nav {
+  position: fixed;
+  background: #1b1b1b;
+  width: 100%;
+  padding: 10px 0;
+  z-index: 12;
+}
+nav .menu {
+  max-width: 1250px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.menu .logo a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+.menu ul {
+  display: inline-flex;
+}
+.menu ul li {
+  list-style: none;
+  margin-left: 7px;
+}
+.menu ul li:first-child {
+  margin-left: 0px;
+}
+.menu ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.menu ul li a:hover {
+  background: #fff;
+  color: black;
+}
+.card {
+  width: 200px;
+  border: 1px solid black;
+}
+.p-viewer {
+  z-index: 9999;
+  position: absolute;
+  top: 30%;
+  right: 10px;
+}
+.img1 {
+  background: url("./img1.jpg") no-repeat;
+  width: 100%;
+  height: 89vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.img3 {
+  background: url("./img3.jpg") no-repeat;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.img4 {
+  width: 100%;
+  height: 89vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.img5 {
+  width: 100%;
+  height: 89vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.img6 {
+  width: 100%;
+  height: 89vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.img7 {
+  width: 100%;
+  height: 89vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.img::before {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+.center {
+  position: absolute;
+  top: 52%;
+  left: 49%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 0 20px;
+  text-align: center;
+}
+.center .title {
+  color: #fff;
+  font-size: 55px;
+  font-weight: 600;
+}
+.center .sub_title {
+  color: #fff;
+  font-size: 52px;
+  font-weight: 600;
+}
+.center .sub_title h4 {
+  color: #fff;
+  font-size: large;
+}
+.center .btns {
+  margin-top: 20px;
+}
+.center .btns a {
+  height: 55px;
+  width: 170px;
+  border-radius: 5px;
+  border: none;
+  margin: 0 10px;
+  border: 2px solid white;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0 10px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+}
+.center .btns a:first-child {
+  color: #fff;
+  background: none;
+}
+.btns a:first-child:hover {
+  background: white;
+  color: black;
+}
+.center .btns a:last-child {
+  background: white;
+  color: black;
+}
+.btns1 {
+  padding-left: 55%;
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
