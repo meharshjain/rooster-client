@@ -69,7 +69,6 @@ function Login(props) {
             <h5>Enter Password</h5>
             <div class="input-box underline">
               <input
-                hidden="hidden"
                 type="text"
                 name="username"
                 placeholder="Enter Your Username"

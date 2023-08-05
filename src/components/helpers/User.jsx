@@ -68,12 +68,13 @@ function User() {
         </div>
         <div className="subnav">
           <button className="subnavbtn">
-            <i className="fa-solid fa-e fa-flip"></i>
-            &nbsp;
-            <i className="fa-solid fa-k fa-flip"></i>
-            <i className="fa-solid fa-a fa-flip"></i>
             <i className="fa-solid fa-r fa-flip"></i>
+            <i className="fa-solid fa-o fa-flip"></i>
+            <i className="fa-solid fa-o fa-flip"></i>
+            <i className="fa-solid fa-s fa-flip"></i>
             <i className="fa-solid fa-t fa-flip"></i>
+            <i className="fa-solid fa-e fa-flip"></i>
+            <i className="fa-solid fa-r fa-flip"></i>
             <i className="fa fa-caret-down"></i>
           </button>
           <div className="subnav-content">
