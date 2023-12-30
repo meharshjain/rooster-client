@@ -5,27 +5,27 @@ import { BrowserRouter } from "react-router-dom";
 /*
 css
 */
-import "./css/App.css";
+/* import "./css/App.css"; */
 
 /* 
 components
 */
 import Home from "./components/Home";
-import Login from "./components/Login";
+/* import Login from "./components/Login";
 import Register from "./components/Register";
 import Error from "./components/404";
 import Logout from "./components/Logout";
 import Products from "./components/Products";
 import Cart from "./components/Cart";
 import MyInfo from "./components/Myaccount";
-import PartnerView from "./components/Partnerwithus";
+import PartnerView from "./components/Partnerwithus"; */
 
 //import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <link
+{/*     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
       integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
@@ -39,11 +39,11 @@ root.render(
     <link
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
       rel="stylesheet"
-    />
+    /> */}
     <BrowserRouter>
       <Routes>
         <Route exact path="/" element={<Home />}></Route>
-        <Route
+{/*         <Route
           exact
           path="/login"
           element={<Login request="username" />}
@@ -59,7 +59,7 @@ root.render(
         <Route exact path="/logout" element={<Logout />}></Route>
         <Route exact path="/myaccount" element={<MyInfo />}></Route>
         <Route exact path="/partner_with_us" element={<PartnerView />}></Route>
-        <Route path="*" element={<Error />}></Route>
+        <Route path="*" element={<Error />}></Route> */}
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

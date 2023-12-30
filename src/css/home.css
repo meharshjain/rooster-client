@@ -1,115 +1,87 @@
-
-#map {
-  height: 93%;
-  width: 100%;
-  padding: 0;
-  margin: 0;
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,700");
+*, *:before, *:after {
+  box-sizing: border-box;
 }
-html,
+
 body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+.container {
+  position: absolute;
+  width: 100%;
   height: 100%;
-  margin: 0;
-  padding: 0;
-}
-.navbar-inverse {
-  padding: 0;
-  margin: 0;
-}
-body {
-  font-family: "Roboto", sans-serif;
-}
-.index-buttons {
-  text-align: center;
-  background: rgba(253, 0, 0, 0.2);
-
-  padding: 0;
-  margin: 0;
-  position: fixed;
-  bottom: 0;
-  /* margin-left:15%; */
-  width: 100%;
-}
-.container .container-buttons {
-  width: 100%;
-}
-.footer {
-  position: relative;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  /* background-color: red; */
-  /* color: white; */
-  text-align: center;
-}
-.dark {
-  background: #232323;
-  border: 0;
-  padding: 0;
-  margin: 0;
-  color: white;
-  bottom: 0;
-}
-.row {
-  margin: 0;
-}
-.centertopage {
-  padding-top: 2%;
-}
-.itemDetailsButton {
-  display: inline-block;
-}
-table {
-  table-layout: fixed;
-  width: 100%;
-}
-
-th,
-td {
   overflow: hidden;
 }
-
-/* List styling */
-.thisClass {
-  list-style: none;
-  width: 33%;
-  transition-property: width;
-  transition-duration: 2s;
-  border: 1px solid #333;
-  border-radius: 0px;
+.container:hover .top:before, .container:hover .top:after, .container:hover .bottom:before, .container:hover .bottom:after, .container:active .top:before, .container:active .top:after, .container:active .bottom:before, .container:active .bottom:after {
+  margin-left: 200px;
+  transform-origin: -200px 50%;
+  transition-delay: 0s;
 }
-.buttonList {
-  text-align: center;
-  padding: 0px;
-  margin: 20px auto;
-}
-.btn-block + .btn-block {
-  margin-top: 0px;
-}
-.searchbar {
-  text-align: center;
-  padding-top: 70px;
+.container:hover .center, .container:active .center {
+  opacity: 1;
+  transition-delay: 0.2s;
 }
 
-/* Add media queries to hide the items from table*/
-
-.active {
-  background: #666;
-  color: white;
-}
-.plus-button {
-  text-align: center;
-  padding: 3px;
-  margin: 0;
-  font-size: 2em;
-}
-
-.login-padding {
-  margin: 60px;
-  padding: 20px;
+.top:before, .top:after, .bottom:before, .bottom:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 200vmax;
+  height: 200vmax;
+  top: 50%;
+  left: 50%;
+  margin-top: -100vmax;
+  transform-origin: 0 50%;
+  transition: all 0.5s cubic-bezier(0.445, 0.05, 0, 1);
+  z-index: 10;
+  opacity: 0.65;
+  transition-delay: 0.2s;
 }
 
-/* Google Maps */
-#map_show {
+.top:before {
+  transform: rotate(45deg);
+  background: #e46569;
+}
+.top:after {
+  transform: rotate(135deg);
+  background: #ecaf81;
+}
+
+.bottom:before {
+  transform: rotate(-45deg);
+  background: #60b8d4;
+}
+.bottom:after {
+  transform: rotate(-135deg);
+  background: #3745b5;
+}
+
+.center {
+  position: absolute;
+  width: 400px;
   height: 400px;
+  top: 50%;
+  left: 50%;
+  margin-left: -200px;
+  margin-top: -200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  opacity: 0;
+  transition: all 0.5s cubic-bezier(0.445, 0.05, 0, 1);
+  transition-delay: 0s;
+  color: #333;
+}
+.center input {
   width: 100%;
+  padding: 15px;
+  margin: 5px;
+  border-radius: 1px;
+  border: 1px solid #ccc;
+  font-family: inherit;
 }
